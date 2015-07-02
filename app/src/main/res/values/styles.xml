@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Set AppCompat’s color theming attrs -->
+    <item name="colorPrimary">#fffc970b</item>
+    <item name="colorPrimaryDark">#fff17b19</item>
+    <!-- Other attributes -->
+    </style>
+</resources>
