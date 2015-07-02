@@ -91,14 +91,6 @@ public class MainActivity extends Activity {
         getForecast(latitude, longitude);
         Log.d(TAG, "Passed Lat and Long are :" + latitude + " | " + longitude);
 
-        /*mDailyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent dayIntent = new Intent(MainActivity.this, DailyForecastActivity.class);
-                startActivity(dayIntent);
-            }
-        });*/
-
     }
 
     private void getForecast(double latitude, double longitude) {
