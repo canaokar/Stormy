@@ -49,6 +49,10 @@ public class Hour implements Parcelable{
         mIcon = icon;
     }
 
+    public int getIconId() {
+        return Forecast.getIconId(mIcon);
+    }
+
     public String getTimezone() {
         return mTimezone;
     }
