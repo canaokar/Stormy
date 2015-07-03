@@ -17,7 +17,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chocodroid.stormy.DailyForecastActivity;
 import com.chocodroid.stormy.R;
 import com.chocodroid.stormy.weather.Current;
 import com.chocodroid.stormy.weather.Day;
@@ -44,6 +43,7 @@ public class MainActivity extends Activity {
 
     public static final String TAG = MainActivity.class.getSimpleName();
     public static final String DAILY_FORECAST = "DAILY_FORECAST";
+    public static final String HOURLY_FORECAST = "HOULRY_FORECAST";
 
     public Forecast mForecast;
 
@@ -279,5 +279,12 @@ public class MainActivity extends Activity {
         Intent dayIntent = new Intent(MainActivity.this, DailyForecastActivity.class);
         dayIntent.putExtra(DAILY_FORECAST, mForecast.getDailyForecast());
         startActivity(dayIntent);
+    }
+
+    @OnClick (R.id.hourlyButton)
+    public void startHourlyActivity(View view) {
+        Intent hourIntent = new Intent(MainActivity.this, HourlyForecastActivity.class);
+        hourIntent.putExtra(HOURLY_FORECAST, mForecast.getHourlyForecast());
+        startActivity(hourIntent);
     }
 }

@@ -1,12 +1,12 @@
-package com.chocodroid.stormy;
+package com.chocodroid.stormy.ui;
 
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 
+import com.chocodroid.stormy.R;
 import com.chocodroid.stormy.adapters.DayAdapter;
-import com.chocodroid.stormy.ui.MainActivity;
 import com.chocodroid.stormy.weather.Day;
 
 import java.util.Arrays;
